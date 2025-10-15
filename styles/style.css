@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  width: 38%;
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin: auto 0;
+}
+main .image {
+  width: 50%;
+  background-image: url("/images/image-product-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+main .content {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.2rem;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.price .discounted-price {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+}
+.price .original-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  width: 100%;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+button i {
+  margin-right: 8px;
+}
+
+@media (max-width: 1400px) {
+  main {
+    width: 50%;
+    font-size: 15px;
+  }
+  main .content {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  main h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    width: 70%;
+    font-size: 15px;
+  }
+  main .content {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  main h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    width: 90%;
+    margin-top: 4rem;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  main .image {
+    width: 100%;
+    height: 350px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+  main .content {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

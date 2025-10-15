@@ -1,0 +1,157 @@
+$cream-color: hsl(30, 38%, 92%);
+$white-color: hsl(0, 0%, 100%);
+$grey-color: hsl(228, 12%, 48%);
+$black-color: hsl(212, 21%, 14%);
+$green-500: hsl(158, 36%, 37%);
+$green-700: hsl(158, 42%, 18%);
+
+$montserrat: 'Montserrat', sans-serif;
+$fraunces: 'Fraunces', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $cream-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    background-color: $white-color;
+    width: 38%;
+    border-radius: 12px;
+    font-family: $montserrat;
+    margin: auto 0;
+
+    .image {
+        width: 50%;
+        background-image: url('/images/image-product-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .content {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        color: $black-color;
+    }
+
+}
+
+.product-type {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+h1 {
+    font-family: $fraunces;
+    font-size: 2.2rem;
+}
+
+.description {
+    color: $grey-color;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .discounted-price {
+        color: $green-500;
+        font-weight: 700;
+        font-family: $fraunces;
+        font-size: 2rem;
+    }
+
+    .original-price {
+        text-decoration: line-through;
+        color: $grey-color;
+    }
+}
+
+button {
+    width: 100%;
+    border: none;
+    background-color: $green-500;
+    color: $white-color;
+    padding: 1rem 0;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $green-700;
+    }
+
+    i {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 1400px) {
+    main {
+        width: 50%;
+        font-size: 15px;
+
+        .content {
+            padding: 1.5rem;
+            gap: 1rem
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        width: 70%;
+        font-size: 15px;
+
+        .content {
+            padding: 1.5rem;
+            gap: 1rem
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+        margin-top: 4rem;
+        flex-direction: column;
+        margin-bottom: 4rem;
+
+        .image {
+            width: 100%;
+            height: 350px;
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 0;
+        }
+        
+        .content {
+            width: 100%;
+        }
+    }
+}
+
+
+
