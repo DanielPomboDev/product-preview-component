@@ -25,7 +25,7 @@ Build a responsive product preview card that matches the provided design and ada
 ## Links
 
 - Solution URL: [(add your repository link)](https://github.com/DanielPomboDev/product-preview-component.git)
-- Live Site URL: [(add your deployed URL)](https://github.com/DanielPomboDev/product-preview-component.git)
+- Live Site URL: https://product-preview-component-fawn-kappa.vercel.app/
 
 ## My process
 
